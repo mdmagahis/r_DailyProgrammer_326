@@ -23,7 +23,7 @@ public class Main {
                 // Find nearest prime above val
                 while (!isPrime) isPrime = checkPrime(++morePrime);
 
-                // Output for
+                // Output for nearest prime numbers
                 System.out.println(lessPrime + " < " + val + " < " + morePrime);
             }
         }
