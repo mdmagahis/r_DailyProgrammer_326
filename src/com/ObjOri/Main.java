@@ -3,7 +3,8 @@ package com.ObjOri;
 public class Main {
 
     public static void main(String[] args) {
-        long[] challengeInput = {270, 541, 993, 649};
+        long[] challengeInput;
+        challengeInput = new long[]{270, 541, 993, 649, 2010741};
         for (long val:challengeInput){
             boolean isPrime = false;
             isPrime = checkPrime(val);
@@ -23,7 +24,7 @@ public class Main {
                 // Find nearest prime above val
                 while (!isPrime) isPrime = checkPrime(++morePrime);
 
-                // Output for
+                // Output for nearest prime numbers
                 System.out.println(lessPrime + " < " + val + " < " + morePrime);
             }
         }
