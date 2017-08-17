@@ -3,8 +3,8 @@ package com.ObjOri;
 public class Main {
 
     public static void main(String[] args) {
-        int[] challengeInput = {270, 541, 993, 649};
-        for (int val:challengeInput){
+        long[] challengeInput = {270, 541, 993, 649};
+        for (long val:challengeInput){
             boolean isPrime = false;
             isPrime = checkPrime(val);
 
@@ -12,8 +12,8 @@ public class Main {
                 System.out.println(val + " is prime.");
             }
             else {
-                int lessPrime = val;
-                int morePrime = val;
+                long lessPrime = val;
+                long morePrime = val;
 
                 // Find nearest prime below val
                 while (!isPrime) isPrime = checkPrime(--lessPrime);
@@ -30,7 +30,7 @@ public class Main {
     }
 
     // Brute force check if a number is prime
-    public static boolean checkPrime(int x){
+    public static boolean checkPrime(long x){
         // x is one, two, or three
         if (x < 4 && x >= 0)    return true;
 
