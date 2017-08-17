@@ -37,8 +37,8 @@ public class Main {
         // x is even
         else if (x % 2 == 0)    return false;
 
-        // check every odd number up until x
-        for (int y = 3; y < x; y += 2) {
+        // check every odd number up until (x/2)
+        for (int y = 3; y < (x/2); y += 2) {
             if (x % y == 0)    return false;
         }
 
